@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------
+Helpers
+---------------*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+/* --------------
+Header Section
+---------------*/
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-elements a {
+    font-size: 13px;
+}
+
+.nav-elements a:hover {
+    text-decoration: underline;
+}
+
+.nav-menu-container {
+    width: 15px;
+    height: 15px;
+}
