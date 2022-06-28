@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------
+Helpers
+---------------*/
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+/* --------------
+Header Section
+---------------*/
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav .nav-right-section a {
+    margin-right: 18px;
+    font-size: 13px;
+}
+
+nav .nav-right-section a:nth-child(1):hover,
+nav .nav-right-section a:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('../images/icons/menu-de-puntos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+}
+
+nav .nav-right-section .perfil-icon img {
+    border-radius: 50%;
+}
+
+nav .nav-right-section .perfil-icon {
+    border-radius: 50%;
+    margin-left: 24px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    padding: 6px;
+}
+
+nav .nav-right-section .perfil-icon:hover {
+    background-color: #f0f0f0;
+}
+
+/* --------------
+Main Section
+---------------*/
+main {
+    text-align: center;
+}
+
+/* --------------
+Main Logo Section
+---------------*/
+
+main .main-logo {
+     width: 272px;
+     margin: 0 auto;
+     margin-top: 10px;
+     margin-bottom: 25px;
+}
+
+/* --------------
+Main Search Section
+---------------*/
+
+main .main-input {
+    width: 590px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 584px;
+    height: 46px;
+    border-radius: 100px;
+    border: 1px solid  #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input input {
+    width: 500px;
+    height: 40px;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+}
+
+main .main-input .search-icon {
+    background-image: url('../images/icons/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .micro-icon {
+    background-image: url('../images/icons/micro-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* ------------------------
+Main Button Search Section
+-------------------------*/
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    color: #3f4142;
+    border-radius: 4px;
+    padding: 0 16px;
+}
+
+main .main-buttons .first-button {
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #dadce0;
+    box-sizing: 0 1px 1px rgba(0, 0, 0, 0.473);
+    color: #202124;
+    cursor: pointer;
+}
+
+/* ------------------------
+Main Hypervincs Section
+-------------------------*/
+
+main .main-hypervincs {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-hypervincs div {
+    font-size: 13px;
+    color: #4d5156;
+}
+
+main .main-hypervincs div a {
+    color: #1a0dab
+}
+
+/* ------------------------
+Footer Section
+-------------------------*/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    margin: 10px 20px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+footer .footer-region {
+    padding: 15px 30px;
+    color: #5f6368;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer .footer-left {
+    justify-content: left;
+}
+
+footer .footer-right {
+    justify-content: right;
+}
+
+footer ul li a {
+    margin: 15px;
+    color: #5f6368;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
