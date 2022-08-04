@@ -333,3 +333,327 @@ Table Currency Section
     line-height: 1.5rem;
     color: var(--warm-black);
 }
+
+/* -----------------
+Product Detail Section
+----------------- */
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.main-product-detail .main-product-detail__icon {
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 20px);
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    background-image: url('../assets/icons/papa-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-detail__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.product-detail__title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail__title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-cards__container{
+    width: 100%;
+}
+
+/* ------------------------------------------
+Product Detail Section > Product Detail Card
+------------------------------------------ */
+
+.product-detail__card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    /* esto nos ayudara para que el contenido crezca y el texto no tenga un overflow */
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: var(--black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product__card-title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product__card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail__card .clock {
+    background-image: url('../assets/icons/clock.svg');
+}
+
+.product-detail__card .eye {
+    background-image: url('../assets/icons/eye.svg');
+}
+
+.product-detail__card .money {
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+
+.product-detail__card .check-arrow {
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+/* --------------------
+Bitcoing Img Section
+-------------------- */
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    text-align: center;
+    background-image: url('../assets/imgs/bitcoinbabyX2.png');
+    background-position: center;
+    background-size: no-repeat;
+    background-size: cover;
+}
+
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+/* --------------------
+Price Section
+-------------------- */
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.plans__title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans__title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+
+}
+
+.plans-container__slider {
+    display: flex;
+    height: 316px;
+    /* Usamos esta propiedad cuando un contenido se desvorda de un bloque en el eje x */
+    overflow-x: scroll;
+    /* Establece el comportamiento del navegador cuando se alcanza el limite horizontal */
+    overscroll-behavior-x: contain;
+    /* Nos permite ajustar la posiciones de nuestro scroll
+    - El primer valor "x" significa que ajustará los puntos en horizonta.
+    - El segundo valor indica si el viewport de nuestro contenido se debe ajustar a los elementos de forma obligatoria o aproximada" */
+    scroll-snap-type: x mandatory;
+}
+
+.plans-container-card {
+    position: relative;
+    /* Esta propiedad se aplica a los elementos de nuestro contenedor, e indica como se tendran que alinear el elemento en el viewport*/
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 233px;
+    height: 250px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,39, 0.16);
+}
+
+.plans-container__slider article:nth-child(1){
+    margin-left: 80px;
+}
+
+.plans-container__slider article:last-child{
+    margin-right: 80px;
+}
+
+.recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 31px;
+    /*
+    Usamos medidas del contenedor ya que con la etiqueta p podemos darle las medidas
+    
+    display: inline-block;
+    */
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    color: var(--just-white);
+    background-color: var(--bitcoint-orange);
+}
+
+
+.plan-card__title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000;
+}
+
+.plan-card__price {
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: 500;
+    line-height: 5.3rem;
+    color: #000;
+}
+
+.plan-card__price span {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 50px);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+    color: #757575;
+}
+
+.plan-card__saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.pland-card__cta {
+    width: 154px;
+    height: 48px;
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    border: 2px solid var(--bitcoint-orange);
+    border-radius: 4px;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    cursor: pointer;
+}
+
+.pland-card__cta span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+    vertical-align: middle;
+    background-image: url('../assets/icons/arrow-right-yellow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoint-orange);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-section__left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.footer-section__left ul li {
+    margin: 10px 0;
+}
+
+.footer-section__left ul li a{
+    text-decoration: none;
+    color: var(--just-white);
+}
