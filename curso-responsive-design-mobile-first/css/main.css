@@ -458,7 +458,7 @@ Bitcoing Img Section
     min-width: 320px;
     height: 60vh;
     text-align: center;
-    background-image: url('../assets/imgs/bitcoinbabyX2.png');
+    background-image: url('../assets/imgs/bitcoinbabyX2.webp');
     background-position: center;
     background-size: no-repeat;
     background-size: cover;
@@ -656,4 +656,9 @@ footer section {
 .footer-section__left ul li a{
     text-decoration: none;
     color: var(--just-white);
+}
+
+.footer-section__right img {
+    width: 64px;
+    height: 50px;
 }
